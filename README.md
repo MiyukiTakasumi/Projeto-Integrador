@@ -1,10 +1,10 @@
 # 🚀 Projeto Integrador
 Projeto aplicando conhecimento da UC13.
 
-## 📝 Objetivo do software (a que deve servir)
+## 📝 Objetivo do software 
 O sistema meuNovoPet tem como propósito conectar pessoas interessadas em adotar um pet com aquelas que precisam encontrar um novo lar para seus animais. Ele permitirá que os usuários consultem pets disponíveis para adoção e também cadastrem novos pets para serem adotados.
 
-## Funcionalidades do sistema (requisitos):
+## Funcionalidades do sistema
 
 📌 Consulta de Pets: Usuários poderão visualizar uma lista de animais disponíveis para adoção, com detalhes como nome, idade, raça e localização.
 
