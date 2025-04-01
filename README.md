@@ -26,7 +26,7 @@ O sistema meuNovoPet tem como propósito conectar pessoas interessadas em adotar
 - **HTML**:
 - **CSS**:
 - **JavaScript**: utilizado para validar campos de formulário.
-- **Bootstrap**: 
+- **Bootstrap**: (Bootstrap)
   
 ## 🧑‍💻 Desenvolvedores
 - Miyuki Takasumi ([LinkedIn](https://www.linkedin.com/in/miyuki-takasumi-a5270b356/))
