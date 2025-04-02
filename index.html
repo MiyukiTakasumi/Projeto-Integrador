@@ -9,29 +9,43 @@
 </head>
 
 <body>
-    <div class="container-fluid text-center">
-        <h1>Olá mundo!</h1>
-
-        <div class="row">
-            <div class="col">
-                Column
-            </div>
-            <div class="col">
-                Column
-            </div>
-            <div class="col">
-                Column
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/cat-dog.jpg" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
+                meuNovoPet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ADOTE OU ENVOLVA-SE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CÃES E FILHOTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GATOS E GATINHOS</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Usuário" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Senha" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Login</button>
+                </form>
             </div>
         </div>
-    </div>
-    <!--JS SEMPRE NO FINAL, ANTES DE FECHAR O <body>-->
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>-->
+    </nav>
+    <footer class="p-4 bg-primary text-light text-center">©️ Copyright 2025 - meuNovoPet - Todos os direitos reservados.</footer>
 
+    <!--JS SEMPRE NO FINAL, ANTES DE FECHAR O </body>-->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
