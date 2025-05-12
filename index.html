@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./adote.html">ADOTE OU ENVOLVA-SE</a>
@@ -44,7 +44,7 @@
     </nav>
     <div class="container">
         <div class="col-12 text-center">
-            <h1>Boas vindas ao <span style="color: green">Meu Novo Pet! 🐶😸</span></h1>
+            <h1>Boas vindas ao <span style="color: rgb(55, 136, 55)">Meu Novo Pet! 🐶😸</span></h1>
             <h3>Seu recurso definitivo para adoção de animais de estimação!</h3>
             <p>Prezamos pelo bem-estar animal, estamos aqui para fornecer tudo o que você precisa. De dicas de
                 especialistas em cuidados com cães e gatos a lista abrangente de animais de estimação adotáveis em sua
@@ -56,8 +56,8 @@
     <div class="container">
         <div class="p-5 text-center">
             <div class="card text-bg-dark">
-                <img src="./img/foto-cat-dog.jpg" class="card-img"
-                    alt="foto de um gato e um cachorro deitados na grama" style="object-fit: cover;">
+                <img src="./img/foto-cat-dog.jpg" class="card-img" alt="foto de um gato e um cachorro deitados na grama" height="600"
+                    style="object-fit: cover;">
                 <div class="card-img-overlay">
                     <h1 class="card-title text-dark">Encontre seu novo melhor amigo</h1>
                     <p class="card-text text-dark"><strong>Animais de estimação em nossa rede de abrigos e
@@ -65,36 +65,66 @@
                 </div>
             </div>
 
+            <h2 class="mb-4">Cadastro de Pet</h2>
+            <form id="formPet" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="nomePet" class="form-label">Nome do Pet</label>
+                    <input type="text" class="form-control" id="nomePet" required>
+                    <div class="invalid-feedback">Informe o nome do pet.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="nomeDono" class="form-label">Nome do dono/responsável pelo pet</label>
+                    <input type="text" class="form-control" id="nomeDono" required>
+                    <div class="invalid-feedback">Informe o nome do dono pelo pet.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="tipo" class="form-label">Tipo</label>
+                    <select class="form-select" id="tipo" required>
+                        <option value="">Selecione...</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <div class="invalid-feedback">Escolha o tipo do pet.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="raca" class="form-label">Raça</label>
+                    <input type="text" class="form-control" id="raca" required>
+                    <div class="invalid-feedback">Informe a raça do pet.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="sexo" class="form-label">Sexo</label>
+                    <select class="form-select" id="sexo" required>
+                        <option value="">Selecione...</option>
+                        <option value="Femea">Fêmea</option>
+                        <option value="Macho">Macho</option>
+                        <div class="invalid-feedback">Informe o sexo do pet.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="idade" class="form-label">Idade (em anos)</label>
+                    <input type="number" class="form-control" id="idade" min="0" required>
+                    <div class="invalid-feedback">Informe a idade do pet.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+            <div id="mensagem" class="mt-3"></div>
+        </div>
+    </div>
+ 
+    <footer>
+        <div class="container text-bg-primary p-3 text-center">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <img src="./img/dog.jpg" class="img-fluid" alt="desenho de um cachorro">
-                    <div class="card-body">
-                        <h5 class="card-title">Totó</h5>
-                        <p class="card-text">Raça mista, macho, pequeno.</p>
-                        <a href="/caes.html" class="btn btn-primary">Saiba mais</a>
-                    </div>
+                <div class="col-12 p-3 mt-3">
+                    <img class="social-media" src="./img/facebook.png" height="30px">
+                    <img class="social-media" src="./img/instagram.png" height="30px">
+                    <img class="social-media" src="./img/whatsApp.png" height="30px">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="./img/dog.jpg" class="img-fluid" alt="desenho de um cachorro">
-                    <div class="card-body">
-                        <h5 class="card-title">Lion</h5>
-                        <p class="card-text">Raça mista, macho, médio.</p>
-                        <a href="/caes.html" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="./img/cat.jpg" class="img-fluid" alt="desenho de um gato">
-                    <div class="card-body">
-                        <h5 class="card-title">Benjamin</h5>
-                        <p class="card-text">Pêlo curto, jovem, macho, pequeno.</p>
-                        <a href="/gatos.html" class="btn btn-primary">Saiba mais</a>
-                    </div>
+                <div>
+                    <p>© 2025 Copyright - Todos os direitos reservados: meuNovoPet</p>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="p-4 bg-primary text-light text-center"> meuNovoPet - &copy Copyright 2025 - Todos os direitos
-        reservados.</footer>
+    </footer>
 
     <!--JS SEMPRE NO FINAL, ANTES DE FECHAR O </body>-->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
